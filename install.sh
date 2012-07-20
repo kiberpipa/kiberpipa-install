@@ -74,7 +74,7 @@ apt-get -y install aptitude git-core
 ##
 
 # Clone the autofs config from brodul git repo
-git clone git://github.com/brodul/kiberpipa-autofs-config.git
+git clone git://github.com/kiberpipa/kiberpipa-autofs-config.git
 
 # Install the deps for autofs
 yes | aptitude -y --full-resolver install autofs portmap nfs-common
@@ -94,7 +94,7 @@ service autofs restart
 ###
 
 # Clone the LDAP client config from brodul repo
-git clone git://github.com/brodul/kiberpipa-ldap-config.git
+git clone git://github.com/kiberpipa/kiberpipa-ldap-config.git
 
 # Install the deps for LDAP client
 DEBIAN_FRONTEND=noninteractive aptitude -y --full-resolver install libpam-ldap libnss-ldap nss-updatedb libnss-db
@@ -120,7 +120,7 @@ ln -s /etc/libnss-ldap.conf /etc/ldap/
 ###
 
 # Clone the PAM config from brodul repo
-git clone git://github.com/brodul/kiberpipa-pam-config.git
+git clone git://github.com/kiberpipa/kiberpipa-pam-config.git
 
 # Back up the default config
 mv /etc/pam.d/common-account /etc/pam.d/common-accountBACKUP
