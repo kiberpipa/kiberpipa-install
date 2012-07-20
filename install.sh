@@ -1,12 +1,12 @@
 #! /bin/bash -e
 
 echo '
- _    _ _                     _             
-| | _(_) |__   ___ _ __ _ __ (_)_ __   __ _ 
+ _    _ _                     _
+| | _(_) |__   ___ _ __ _ __ (_)_ __   __ _
 | |/ / | |_ \ / _ \ |__| |_ \| | |_ \ / _` |
 |   <| | |_) |  __/ |  | |_) | | |_) | (_| |
 |_|\_\_|_.__/ \___|_|  | .__/|_| .__/ \__,_|
-                       |_|     |_|          
+                       |_|     |_|
 '
 
 echo -e "\nDISCLAIMER:\nI f***ing know what this script does and I can read bash. \n\n Please write the the magic word. And press enter."
