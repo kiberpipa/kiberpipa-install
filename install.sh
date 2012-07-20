@@ -51,8 +51,8 @@ date +%D >> /var/kiberpipa_
 
 mkdir -p /opt/home/
 
-for user in  $( getent passwd | grep home | cut -d : -f 1 )
-    do	
+for user in  $( getent passwd | grep home | grep -v false | cut -d : -f 1 )
+    do
 	mkdir -p /opt/home/$user
 	chown -R $user:$user /opt/home/$user
 	usermod  -d /opt/home/$user $user
